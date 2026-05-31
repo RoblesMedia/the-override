@@ -184,7 +184,7 @@
   .get li strong { color:#fff; font-weight:600; }
 
   /* book-cover style PDF mock with its own mini storm→sunrise */
-  .pdf-mock { position:relative; border-radius:14px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 60px rgba(0,0,0,0.55); aspect-ratio: 3/4; max-width:330px; margin:0 auto; }
+  .pdf-mock { position:relative; width:100%; border-radius:14px; overflow:hidden; border:1px solid var(--line); box-shadow:0 30px 60px rgba(0,0,0,0.55); aspect-ratio: 3/4; max-width:330px; margin:0 auto; }
   .pdf-mock .pdf-bg { position:absolute; inset:0; }
   .pdf-mock .pdf-inner { position:absolute; inset:0; z-index:2; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:28px; background: linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.15) 40%, rgba(0,0,0,0.7)); }
   .pdf-mock .badge { font-size:0.66rem; letter-spacing:0.24em; color:var(--gold); }
@@ -233,12 +233,13 @@
     .hero .lede { margin-left:auto; margin-right:auto; }
   }
   @media (max-width:760px) {
-    .get-grid { grid-template-columns:1fr; gap:30px; }
-    .pdf-mock { order:-1; }
-    section { padding:56px 0; }
+    .get-grid { grid-template-columns:1fr; gap:24px; }
+    /* the real book cover already leads the page — the mini mock is redundant on mobile */
+    .pdf-mock { display:none; }
+    section { padding:48px 0; }
     /* the lead-magnet block and the signup form read as one unit — close the gap */
-    .get { padding-bottom:28px; }
-    .signup { padding-top:28px; }
+    .get { padding-top:36px; padding-bottom:24px; }
+    .signup { padding-top:24px; }
     .step { flex-basis:30%; }
     .arrow { display:none; }
   }
