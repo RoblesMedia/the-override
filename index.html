@@ -233,9 +233,9 @@
     .hero .lede { margin-left:auto; margin-right:auto; }
   }
   @media (max-width:760px) {
-    .get-grid { grid-template-columns:1fr; gap:24px; }
-    /* the real book cover already leads the page — the mini mock is redundant on mobile */
-    .pdf-mock { display:none; }
+    .get-grid { grid-template-columns:1fr; gap:28px; }
+    /* show the guide mock below the bullets on mobile (collapse bug fixed) */
+    .pdf-mock { max-width:260px; }
     section { padding:48px 0; }
     /* the lead-magnet block and the signup form read as one unit — close the gap */
     .get { padding-top:36px; padding-bottom:24px; }
@@ -437,7 +437,6 @@
   <!-- ============ AUTHOR ============ -->
   <section class="author">
     <div class="wrap">
-      <div class="avatar">DR</div>
       <h2>David Robles</h2>
       <div class="role">Licensed Psychotherapist</div>
       <p>I'm a psychotherapist who has sat with real people in real pain and distilled what actually works. The Override is the model I use to help people stop running on autopilot and start choosing their lives.</p>
