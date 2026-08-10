@@ -130,11 +130,15 @@
   /* ================= PAGE 4 : PAUSE ================= */
   .pause{background:#faf7f0;padding:58px 64px 0;}
   .pause .intro{margin-top:14px;font-size:13.5px;line-height:1.6;color:#45403a;max-width:656px;font-weight:500;}
-  .steps{margin-top:40px;}
+  .pausewrap{display:flex;gap:30px;margin-top:38px;align-items:flex-start;}
+  .steps{flex:1;margin-top:0;}
   .step{display:flex;gap:24px;margin-bottom:38px;}
   .step .num{font-family:"Archivo Black",sans-serif;font-size:47px;line-height:1;color:#f0a500;width:84px;flex:none;}
   .step h3{font-family:"Archivo",sans-serif;font-weight:700;font-size:16px;color:#15120d;padding-top:3px;}
-  .step p{margin-top:7px;font-size:12.5px;line-height:1.6;color:#5a5448;font-weight:500;max-width:560px;}
+  .step p{margin-top:7px;font-size:12.5px;line-height:1.6;color:#5a5448;font-weight:500;}
+  .rail{width:196px;flex:none;padding-top:4px;}
+  .rail svg{display:block;margin:0 auto;}
+  .railcap{text-align:center;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:7.5px;letter-spacing:1.8px;color:#8a8276;margin:9px 0 26px;}
   .try{position:absolute;left:0;right:0;bottom:0;height:296px;}
   .try img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
   .try .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(5,7,9,.55) 0%,rgba(5,7,9,.78) 100%);}
@@ -257,37 +261,37 @@
     <div class="prow even">
       <div class="pid">02</div>
       <div><div class="pline"><span class="pname">THE_PEACEKEEPER<span>.exe</span></span><span class="chip">OUTPUT: MUTED</span></div>
-      <div class="ptell"><b>Never says what she needs.</b> Years of swallowed words have built a quiet wall of resentment.</div></div>
+      <div class="ptell"><b>Never says what they need.</b> Years of swallowed words have built a quiet wall of resentment.</div></div>
       <div class="flagwrap"><div class="flagbox"></div><div class="flaglab">FLAG</div></div>
     </div>
     <div class="prow odd">
       <div class="pid">03</div>
       <div><div class="pline"><span class="pname">THE_FIXER<span>.exe</span></span><span class="chip">UPTIME: 24/7</span></div>
-      <div class="ptell"><b>Solves everyone's problem so he never has to sit with his own.</b> Feels most alive when he's needed.</div></div>
+      <div class="ptell"><b>Solves everyone's problem so they never have to sit with their own.</b> Feels most alive when they're needed.</div></div>
       <div class="flagwrap"><div class="flagbox"></div><div class="flaglab">FLAG</div></div>
     </div>
     <div class="prow even">
       <div class="pid">04</div>
       <div><div class="pline"><span class="pname">THE_AVOIDER<span>.exe</span></span><span class="chip">STATUS: PAUSED</span></div>
-      <div class="ptell"><b>Won't start what she might not finish.</b> Lives in a permanent state of almost.</div></div>
+      <div class="ptell"><b>Won't start what they might not finish.</b> Lives in a permanent state of almost.</div></div>
       <div class="flagwrap"><div class="flagbox"></div><div class="flaglab">FLAG</div></div>
     </div>
     <div class="prow odd">
       <div class="pid">05</div>
       <div><div class="pline"><span class="pname">THE_PERFECTIONIST<span>.exe</span></span><span class="chip">LOADING... 99%</span></div>
-      <div class="ptell"><b>Standards impossible by design.</b> If the bar can't be cleared, he never truly fails. Just "not yet."</div></div>
+      <div class="ptell"><b>Standards impossible by design.</b> If the bar can't be cleared, they never truly fail. Just "not yet."</div></div>
       <div class="flagwrap"><div class="flagbox"></div><div class="flaglab">FLAG</div></div>
     </div>
     <div class="prow even">
       <div class="pid">06</div>
       <div><div class="pline"><span class="pname">THE_PLEASER<span>.exe</span></span><span class="chip">SHAPESHIFT: ON</span></div>
-      <div class="ptell"><b>Learned early that love is conditional.</b> Becomes whoever's wanted and lost track of what she wants.</div></div>
+      <div class="ptell"><b>Learned early that love is conditional.</b> Becomes whoever's wanted and lost track of what they want.</div></div>
       <div class="flagwrap"><div class="flagbox"></div><div class="flaglab">FLAG</div></div>
     </div>
     <div class="prow odd">
       <div class="pid">07</div>
       <div><div class="pline"><span class="pname">THE_CONTROLLER<span>.exe</span></span><span class="chip">ADMIN MODE</span></div>
-      <div class="ptell"><b>Doesn't trust it'll go well unless he runs every variable.</b> Control is the only safety he's ever known.</div></div>
+      <div class="ptell"><b>Doesn't trust it'll go well unless they run every variable.</b> Control is the only safety they've ever known.</div></div>
       <div class="flagwrap"><div class="flagbox"></div><div class="flaglab">FLAG</div></div>
     </div>
     <div class="prow even">
@@ -317,21 +321,46 @@
   <h2 class="display">The 10-Second Pause</h2>
   <p class="intro">Between what happens to you and what you do next, there is a space. When the pattern runs, that space is a fraction of a second. It fires before you even see it coming. The work is to widen that space until there's room for a choice. Start here.</p>
 
-  <div class="steps">
-    <div class="step">
-      <div class="num display">01</div>
-      <div><h3>Notice the cue</h3>
-      <p>Learn the physical signal that your pattern is about to fire: a tight chest, a held breath, a clenched jaw, a flush of heat. The body knows before the mind does.</p></div>
+  <div class="pausewrap">
+    <div class="steps">
+      <div class="step">
+        <div class="num display">01</div>
+        <div><h3>Notice the cue</h3>
+        <p>Learn the physical signal that your pattern is about to fire: a tight chest, a held breath, a clenched jaw, a flush of heat. The body knows before the mind does.</p></div>
+      </div>
+      <div class="step">
+        <div class="num display">02</div>
+        <div><h3>Do nothing for ten seconds</h3>
+        <p>When you feel it, don't respond. Don't send the text, say the thing, or take the action. Just breathe, slow out-breaths. Ten seconds. That's the whole drill.</p></div>
+      </div>
+      <div class="step">
+        <div class="num display">03</div>
+        <div><h3>Ask one question</h3>
+        <p>In the space you just made, ask: "Is this a fact, or a story?" Then choose your response from there, not from the pattern.</p></div>
+      </div>
     </div>
-    <div class="step">
-      <div class="num display">02</div>
-      <div><h3>Do nothing for ten seconds</h3>
-      <p>When you feel it, don't respond. Don't send the text, say the thing, or take the action. Just breathe, slow out-breaths. Ten seconds. That's the whole drill.</p></div>
-    </div>
-    <div class="step">
-      <div class="num display">03</div>
-      <div><h3>Ask one question</h3>
-      <p>In the space you just made, ask: "Is this a fact, or a story?" Then choose your response from there, not from the pattern.</p></div>
+
+    <div class="rail">
+      <svg width="196" height="240" viewBox="0 0 196 240" fill="none">
+        <ellipse cx="68" cy="48" rx="25" ry="29" stroke="#a29a88" stroke-width="1.6"/>
+        <path d="M56 74 C56 88 51 96 43 102 C22 113 13 134 11 182 L11 226 M80 74 C80 88 85 96 93 102 C114 113 123 134 125 182 L125 226" stroke="#a29a88" stroke-width="1.6" stroke-linecap="round"/>
+        <circle cx="85" cy="62" r="4.5" fill="#f0a500"/><circle cx="85" cy="62" r="9.5" stroke="#f0a500" stroke-width="1.2" opacity=".45"/><circle cx="85" cy="62" r="14.5" stroke="#f0a500" stroke-width="1" opacity=".2"/>
+        <circle cx="68" cy="138" r="4.5" fill="#f0a500"/><circle cx="68" cy="138" r="9.5" stroke="#f0a500" stroke-width="1.2" opacity=".45"/><circle cx="68" cy="138" r="14.5" stroke="#f0a500" stroke-width="1" opacity=".2"/>
+        <circle cx="68" cy="186" r="4.5" fill="#f0a500"/><circle cx="68" cy="186" r="9.5" stroke="#f0a500" stroke-width="1.2" opacity=".45"/><circle cx="68" cy="186" r="14.5" stroke="#f0a500" stroke-width="1" opacity=".2"/>
+        <path d="M96 62 H112 M84 138 H112 M84 186 H112" stroke="#cfc7b4" stroke-width="1"/>
+        <text x="116" y="65" font-family="JetBrains Mono,monospace" font-size="8" font-weight="700" letter-spacing="1" fill="#6b6455">JAW: CLENCHED</text>
+        <text x="116" y="141" font-family="JetBrains Mono,monospace" font-size="8" font-weight="700" letter-spacing="1" fill="#6b6455">CHEST: TIGHT</text>
+        <text x="116" y="189" font-family="JetBrains Mono,monospace" font-size="8" font-weight="700" letter-spacing="1" fill="#6b6455">BREATH: HELD</text>
+      </svg>
+      <div class="railcap">THE BODY KNOWS FIRST</div>
+      <svg width="190" height="114" viewBox="0 0 190 114" fill="none">
+        <path d="M20 105 A75 75 0 0 1 170 105" stroke="#ded6c4" stroke-width="3" stroke-linecap="round"/>
+        <path d="M15 105 H23 M18.9 80.3 L26.5 82.8 M30.3 58 L36.8 62.7 M48 40.3 L52.7 46.8 M70.3 28.9 L72.8 36.5 M95 25 V33 M119.7 28.9 L117.2 36.5 M142 40.3 L137.3 46.8 M159.7 58 L153.2 62.7 M171.1 80.3 L163.5 82.8 M175 105 H167" stroke="#b9b19f" stroke-width="1.4"/>
+        <path d="M20 105 A75 75 0 0 1 139 44" stroke="#f0a500" stroke-width="3.5" stroke-linecap="round"/>
+        <circle cx="139" cy="44" r="4.5" fill="#f0a500"/>
+        <text x="95" y="98" text-anchor="middle" font-family="Archivo Black,sans-serif" font-size="27" fill="#15120d">10</text>
+      </svg>
+      <div class="railcap" style="margin-top:7px;">SLOW OUT-BREATHS. COUNT THEM.</div>
     </div>
   </div>
 
