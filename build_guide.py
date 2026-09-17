@@ -28,7 +28,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 ASSETS = [
     "guide.html",
     "guide-assets/cover-sunset-road.jpg",  # Shai Pal / Unsplash
-    "guide-assets/pause-water.jpg",      # Clayton Tonna / Unsplash
+    "guide-assets/pause-golden-clouds.jpg",  # Peter Robbins / Unsplash
 ]
 
 for rel in ASSETS:

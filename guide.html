@@ -127,7 +127,59 @@
   .scan .foot{bottom:28px;}
   .scan .foot .l,.scan .foot .num{color:#6e685c;}
 
-  /* ================= PAGE 4 : PAUSE ================= */
+
+  /* ================= PAGE 4 : YOUR PATTERN'S FIRST MOVE ================= */
+  .moves{background:#faf7f0;padding:58px 64px;}
+  .moves h2{margin-top:12px;font-size:40px;color:#15120d;letter-spacing:.2px;}
+  .moves .intro{margin-top:14px;font-size:13.5px;line-height:1.6;color:#45403a;max-width:656px;font-weight:500;}
+  .mgrid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:30px;}
+  .mcard{background:#fdfbf5;border:1px solid #e3dbc6;border-radius:12px;padding:16px 20px 17px;}
+  .mhead{display:flex;align-items:baseline;gap:10px;}
+  .mnum{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:10px;color:#c78700;}
+  .mname{font-family:"Archivo",sans-serif;font-weight:700;font-size:15px;color:#15120d;}
+  .mstory{margin-top:8px;font-size:12px;line-height:1.45;color:#7a7366;font-weight:500;}
+  .mover{margin-top:5px;font-family:"Archivo",sans-serif;font-weight:700;font-size:12.5px;line-height:1.4;color:#c78700;}
+  .mlab{margin-top:10px;font-family:"JetBrains Mono",monospace;font-weight:700;font-size:8px;letter-spacing:2px;color:#a29a88;}
+  .mmove{margin-top:3px;font-size:12px;line-height:1.5;color:#2d2923;font-weight:500;}
+
+  /* ================= PAGE 5 : THE LOOP IN REAL LIFE ================= */
+  .real{background:#0a0a0a;padding:58px 64px;}
+  .real .eyebrow{color:#f0a500;}
+  .real h2{margin-top:12px;font-size:40px;color:#faf7f0;letter-spacing:.2px;}
+  .real .intro{margin-top:14px;font-size:13.5px;line-height:1.6;color:#b3ac9c;max-width:640px;font-weight:500;}
+  .rpaths{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px;}
+  .rcol{border-radius:16px;padding:22px 18px 18px;}
+  .rcol.old{background:#121110;border:1px solid #23211c;}
+  .rcol.new{background:#14110a;border:1px solid rgba(240,165,0,.45);}
+  .rlabel{font-weight:700;font-size:9px;letter-spacing:2.6px;text-align:center;}
+  .rcol.old .rlabel{color:#8a8272;}
+  .rcol.new .rlabel{color:#f0a500;}
+  .rstep{margin-top:6px;border-radius:10px;padding:10px 14px 11px;}
+  .rcol .rlabel + .rstep{margin-top:12px;}
+  .rarrow{height:18px;margin-top:6px;display:flex;align-items:center;justify-content:center;}
+  .rcol.old .rarrow{color:#4f4a41;}
+  .rcol.new .rarrow{color:#8a6d22;}
+  .rcol.old .rstep{background:#191815;border:1px solid #25231e;}
+  .rcol.new .rstep{background:#1b1810;border:1px solid #2c2717;}
+  .rstep .k{font-family:"JetBrains Mono",monospace;font-weight:700;font-size:8.5px;letter-spacing:2px;}
+  .rcol.old .rstep .k{color:#7d766a;}
+  .rcol.new .rstep .k{color:#c78700;}
+  .rstep p{margin-top:4px;font-size:12px;line-height:1.5;font-weight:500;}
+  .rcol.old .rstep p{color:#9f988a;}
+  .rcol.new .rstep p{color:#ece6d8;}
+  .rcol.new .rstep.pz{border-color:#f0a500;}
+  .rcol.new .rstep.hl{background:#f0a500;border-color:#f0a500;}
+  .rcol.new .rstep.hl .k{color:#5c4405;}
+  .rcol.new .rstep.hl p{color:#161007;}
+  .rtail{margin-top:12px;text-align:center;font-weight:700;font-size:8.5px;letter-spacing:2.2px;}
+  .rcol.old .rtail{color:#6e685c;}
+  .rcol.new .rtail{color:#f0a500;}
+  .rinsight{margin-top:24px;background:#121212;border-left:3px solid #f0a500;border-radius:0 14px 14px 0;padding:20px 26px;}
+  .rinsight .ie{font-weight:700;font-size:9px;letter-spacing:2.6px;color:#f0a500;}
+  .rinsight p{margin-top:8px;font-size:13px;line-height:1.55;color:#e9e4d8;font-weight:500;}
+  .real .foot .l,.real .foot .num{color:#6e685c;}
+
+  /* ================= PAGE 6 : PAUSE ================= */
   .pause{background:#faf7f0;padding:58px 64px 0;}
   .pause .intro{margin-top:14px;font-size:13.5px;line-height:1.6;color:#45403a;max-width:656px;font-weight:500;}
   .pausewrap{display:flex;gap:30px;margin-top:38px;align-items:flex-start;}
@@ -149,7 +201,7 @@
   .try .foot .l{color:rgba(255,255,255,.62);}
   .try .foot .num{color:rgba(255,255,255,.62);}
 
-  /* ================= PAGE 5 : CLOSE ================= */
+  /* ================= PAGE 7 : CLOSE ================= */
   .close{background:#0a0a0a;padding:66px 64px 44px;display:flex;flex-direction:column;}
   .close h2{margin-top:14px;font-size:46px;line-height:1.04;color:#ffffff;}
   .close .body{margin-top:20px;font-size:13.5px;line-height:1.7;color:#c4bdaf;font-weight:500;max-width:540px;}
@@ -314,7 +366,70 @@
   <div class="foot"><span class="l">THE OVERRIDE &middot; STARTER GUIDE</span><span class="r"><span class="site">THEOVERRIDE.CO</span><span class="num">03</span></span></div>
 </div>
 
-<!-- ============ PAGE 4 · THE PAUSE ============ -->
+<!-- ============ PAGE 4 · YOUR PATTERN'S FIRST MOVE ============ -->
+<div class="page moves">
+  <div class="kicker eyebrow">From the Scan</div>
+  <h2 class="display">Your Pattern's First Move</h2>
+  <p class="intro">Find the pattern you wrote in the gold box on page 3. Read the story it tells you, then make its first move this week. One pattern, one move. That's how the loop starts to break.</p>
+
+  <div class="mgrid">
+    <div class="mcard"><div class="mhead"><span class="mnum">01</span><span class="mname">The Achiever</span></div><div class="mstory">“If I stop now, I lose the edge.”</div><div class="mover">Your worth was never the output.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Sit in the win for one full day before you take on the next thing.</div></div>
+    <div class="mcard"><div class="mhead"><span class="mnum">02</span><span class="mname">The Peacekeeper</span></div><div class="mstory">“If I say the real thing, this gets worse.”</div><div class="mover">Their comfort is not your job.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Say the real thing once, in a calm voice, and let it land.</div></div>
+    <div class="mcard"><div class="mhead"><span class="mnum">03</span><span class="mname">The Fixer</span></div><div class="mstory">“If I don't step in, this falls apart.”</div><div class="mover">Being needed is not the same as being loved.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Ask what they actually want before you hand them a solution.</div></div>
+    <div class="mcard"><div class="mhead"><span class="mnum">04</span><span class="mname">The Avoider</span></div><div class="mstory">“I'll deal with it later.”</div><div class="mover">Later is a decision, not a delay.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Do the first ten minutes of it right now, badly.</div></div>
+    <div class="mcard"><div class="mhead"><span class="mnum">05</span><span class="mname">The Perfectionist</span></div><div class="mstory">“If it's not right, it's not ready.”</div><div class="mover">Finished beats flawless.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Send it at eighty-five percent and let the world respond.</div></div>
+    <div class="mcard"><div class="mhead"><span class="mnum">06</span><span class="mname">The Pleaser</span></div><div class="mstory">“If I say no, they'll pull away.”</div><div class="mover">A no is not a rejection.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Say no to one small ask this week. No excuse, no apology.</div></div>
+    <div class="mcard"><div class="mhead"><span class="mnum">07</span><span class="mname">The Controller</span></div><div class="mstory">“If I'm not on top of it, it slips.”</div><div class="mover">Uncertainty is not the same as danger.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Hand one thing over and let them do it their way.</div></div>
+    <div class="mcard"><div class="mhead"><span class="mnum">08</span><span class="mname">The Drifter</span></div><div class="mstory">“Whatever works for everyone else works for me.”</div><div class="mover">Not choosing is still a choice.</div><div class="mlab">FIRST MOVE</div><div class="mmove">Name one thing you want this month. Say it out loud to someone who will ask you about it.</div></div>
+  </div>
+
+  <div class="foot"><span class="l">THE OVERRIDE &middot; STARTER GUIDE</span><span class="r"><span class="site">THEOVERRIDE.CO</span><span class="num">04</span></span></div>
+</div>
+
+<!-- ============ PAGE 5 · THE LOOP IN REAL LIFE ============ -->
+<div class="page real">
+  <div class="kicker eyebrow">Watch It Run</div>
+  <h2 class="display">The Loop in Real Life</h2>
+  <p class="intro">Here's the model on a normal Tuesday night. Same trigger on both sides. Watch where it splits.</p>
+
+  <div class="rpaths">
+    <div class="rcol old">
+      <div class="kicker rlabel">The Old Path &middot; Autopilot</div>
+      <div class="rstep"><div class="k">TRIGGER</div><p>9:14 pm. An email from your boss: “Got a minute first thing tomorrow?”</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep"><div class="k">STORY</div><p>“Something's wrong. I missed something. This is bad.”</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep"><div class="k">EMOTION</div><p>Chest tight. Mind racing. Sleep is gone.</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep"><div class="k">PATTERN</div><p>You fire back a long apology for a problem nobody named, then redo the deck until 1 am.</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep"><div class="k">SAME OUTCOME</div><p>You walk in wrecked and defensive. It was about a new project.</p></div>
+      <div class="rtail">RUNS AGAIN TOMORROW</div>
+    </div>
+    <div class="rcol new">
+      <div class="kicker rlabel">The New Path &middot; The Override</div>
+      <div class="rstep"><div class="k">TRIGGER</div><p>Same email. Same 9:14 pm.</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep pz"><div class="k">PAUSE</div><p>You feel your chest tighten. Phone face down. Ten slow breaths.</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep hl"><div class="k">OVERRIDE</div><p>“Fact or story?” Fact: they want to talk. Everything else is story.</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep"><div class="k">NEW ACTION</div><p>“Sounds good. 9 works.” Then you close the laptop.</p></div>
+      <div class="rarrow"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg></div>
+      <div class="rstep"><div class="k">NEW OUTCOME</div><p>You sleep. You walk in steady, ready for whatever it is.</p></div>
+      <div class="rtail">THIS IS THE WORK</div>
+    </div>
+  </div>
+
+  <div class="rinsight">
+    <div class="kicker ie">What Changed</div>
+    <p>The email was the same both times. The only thing that changed was ten seconds and one question. That's the override.</p>
+  </div>
+
+  <div class="foot"><span class="l">THE OVERRIDE &middot; STARTER GUIDE</span><span class="r"><span class="site">THEOVERRIDE.CO</span><span class="num">05</span></span></div>
+</div>
+
+<!-- ============ PAGE 6 · THE PAUSE ============ -->
 <div class="page pause">
   <div class="kicker eyebrow">Your First Tool</div>
   <h2 class="display">The 10-Second Pause</h2>
@@ -364,17 +479,17 @@
   </div>
 
   <div class="try">
-    <img src="guide-assets/pause-water.jpg" alt="">
+    <img src="guide-assets/pause-golden-clouds.jpg" alt="">
     <div class="ov"></div>
     <div class="txt">
       <div class="kicker te">Try It This Week</div>
       <p>Pick one recurring trigger: a certain email, a certain person, a certain time of day. For one week, run the 10-second pause every time it shows up. Notice what changes.</p>
     </div>
-    <div class="foot"><span class="l">THE OVERRIDE &middot; STARTER GUIDE</span><span class="r"><span class="site" style="color:#f0a500;">THEOVERRIDE.CO</span><span class="num">04</span></span></div>
+    <div class="foot"><span class="l">THE OVERRIDE &middot; STARTER GUIDE</span><span class="r"><span class="site" style="color:#f0a500;">THEOVERRIDE.CO</span><span class="num">06</span></span></div>
   </div>
 </div>
 
-<!-- ============ PAGE 5 · CLOSE ============ -->
+<!-- ============ PAGE 7 · CLOSE ============ -->
 <div class="page close">
   <div class="kicker eyebrow" style="color:#f0a500;">Your Next Move</div>
   <h2 class="display">Now run the override.</h2>
@@ -398,7 +513,7 @@
 
   <div class="colophon">
     <span class="c">&copy; DAVID ROBLES &middot; THE OVERRIDE</span>
-    <span class="credits">PHOTOGRAPHY: SHAI PAL &middot; CLAYTON TONNA / UNSPLASH</span>
+    <span class="credits">PHOTOGRAPHY: SHAI PAL &middot; PETER ROBBINS / UNSPLASH</span>
   </div>
 </div>
 
