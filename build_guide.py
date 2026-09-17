@@ -27,7 +27,7 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 ASSETS = [
     "guide.html",
-    "guide-assets/cover-tunnel.jpg",     # Alexander Kaufmann / Unsplash
+    "guide-assets/cover-sunset-road.jpg",  # Shai Pal / Unsplash
     "guide-assets/pause-water.jpg",      # Clayton Tonna / Unsplash
 ]
 
